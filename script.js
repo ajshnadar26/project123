@@ -1,14 +1,14 @@
 function addStudent() {
 
-    let name = document.getElementById("studentName").value;
+    let n = document.getElementById("student_Name").value;
 
-    if(name !== "") {
+    if(n !== "") {
 
         let li = document.createElement("li");
-        li.innerText = name;
+        li.innerText = n;
 
         document.getElementById("studentList").appendChild(li);
 
-        document.getElementById("studentName").value = "";
+        document.getElementById("student_Name").value = "";
     }
 }
